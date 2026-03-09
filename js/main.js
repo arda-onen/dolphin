@@ -242,6 +242,54 @@
     });
   }
 
+  function setupLazyVideoSources() {
+    const videos = Array.from(document.querySelectorAll("video"));
+    if (!videos.length) {
+      return;
+    }
+
+    const hydrateVideo = (video) => {
+      const sources = Array.from(video.querySelectorAll("source[data-src]"));
+      if (!sources.length) {
+        return;
+      }
+      sources.forEach((source) => {
+        const src = source.getAttribute("data-src");
+        if (src) {
+          source.setAttribute("src", src);
+          source.removeAttribute("data-src");
+        }
+      });
+      video.load();
+    };
+
+    const lazyCandidates = videos.filter((video) => video.querySelector("source[data-src]"));
+    if (!lazyCandidates.length) {
+      return;
+    }
+
+    if (!("IntersectionObserver" in window)) {
+      lazyCandidates.forEach(hydrateVideo);
+      return;
+    }
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (!entry.isIntersecting) {
+            return;
+          }
+          const video = entry.target;
+          hydrateVideo(video);
+          observer.unobserve(video);
+        });
+      },
+      { rootMargin: "260px 0px" }
+    );
+
+    lazyCandidates.forEach((video) => observer.observe(video));
+  }
+
   document.addEventListener("DOMContentLoaded", () => {
     if (window.DolphinI18n && typeof window.DolphinI18n.initI18n === "function") {
       window.DolphinI18n.initI18n();
@@ -253,5 +301,6 @@
     setupHomeScrollParallax();
     setupFaqAccordion();
     setCurrentYear();
+    setupLazyVideoSources();
   });
 })();
