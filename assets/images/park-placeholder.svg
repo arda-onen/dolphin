@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" role="img" aria-label="Dolphin Park Placeholder">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#80e1ff"/>
+      <stop offset="100%" stop-color="#00a8cc"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="800" fill="url(#bg)"/>
+  <circle cx="240" cy="190" r="70" fill="#ffd166" opacity="0.9"/>
+  <path d="M0 580 C220 500 350 640 560 560 C780 480 920 620 1200 530 L1200 800 L0 800 Z" fill="#ffffff" opacity="0.5"/>
+  <path d="M0 650 C220 570 380 690 600 610 C830 530 980 690 1200 620 L1200 800 L0 800 Z" fill="#ffffff" opacity="0.7"/>
+  <text x="50%" y="52%" dominant-baseline="middle" text-anchor="middle" fill="#ffffff" font-size="72" font-family="Arial, sans-serif" font-weight="700">
+    Dolphin Park
+  </text>
+  <text x="50%" y="61%" dominant-baseline="middle" text-anchor="middle" fill="#eafaff" font-size="34" font-family="Arial, sans-serif">
+    Hero and gallery media placeholder
+  </text>
+</svg>

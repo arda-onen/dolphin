@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title data-i18n="metaTitleTickets">Dolphin Park | Biletler</title>
+    <meta name="description" content="Dolphin Park bilet, saat ve ziyaret bilgileri. Online odeme yoktur." data-i18n-content="metaDescriptionTickets" />
+    <meta property="og:title" content="Dolphin Park | Biletler" data-i18n-content="metaOgTitleTickets" />
+    <meta property="og:description" content="Bilgilendirme amacli fiyat ve ziyaret detaylari." data-i18n-content="metaOgDescriptionTickets" />
+    <meta property="og:type" content="website" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body class="tickets-page">
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="index.html">
+          <span class="brand-mark">D</span>
+          <span data-i18n="brandName">Dolphin Park</span>
+        </a>
+        <nav class="site-nav" aria-label="Main navigation">
+          <ul>
+            <li><a href="index.html" data-i18n="navHome">Anasayfa</a></li>
+            <li><a href="about.html" data-i18n="navAbout">Hakkimizda</a></li>
+            <li><a class="active" href="tickets.html" data-i18n="navTickets">Biletler</a></li>
+            <li><a href="contact.html" data-i18n="navContact">Iletisim</a></li>
+            <li><a href="faq.html" data-i18n="navFaq">SSS</a></li>
+          </ul>
+        </nav>
+        <div class="header-right">
+          <div class="lang-dropdown">
+              <button class="lang-trigger" type="button" aria-haspopup="true" aria-expanded="false" aria-label="Language switcher">
+                <img class="lang-flag lang-current-flag" src="assets/flags/tr.png" alt="TR flag" />
+                <span class="lang-code lang-current-code">TR</span>
+                <span class="lang-caret">▾</span>
+              </button>
+              <ul class="lang-menu" role="menu" aria-label="Languages">
+                <li><button class="lang-option" type="button" data-lang="tr"><img class="lang-flag" src="assets/flags/tr.png" alt="Turkish flag" /><span>Turkce (TR)</span></button></li>
+                <li><button class="lang-option" type="button" data-lang="en"><img class="lang-flag" src="assets/flags/en.png" alt="English flag" /><span>English (EN)</span></button></li>
+                <li><button class="lang-option" type="button" data-lang="ru"><img class="lang-flag" src="assets/flags/ru.png" alt="Russian flag" /><span>Russkiy (RU)</span></button></li>
+                <li><button class="lang-option" type="button" data-lang="de"><img class="lang-flag" src="assets/flags/de.png" alt="German flag" /><span>Deutsch (DE)</span></button></li>
+              </ul>
+          </div>
+          <button class="menu-btn" type="button" aria-label="Menu" aria-expanded="false">☰</button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="section page-hero page-hero-compact tickets-hero">
+        <div class="container page-hero-shell reveal">
+          <div class="page-hero-main">
+            <span class="eyebrow" data-i18n="navTickets">Biletler</span>
+            <h1 data-i18n="ticketsTitle">Bilet ve Ziyaret Bilgileri</h1>
+            <p data-i18n="ticketsText">
+              Sitemiz bilgilendirme amaçlıdır. Ödeme alınmaz, sadece ziyaret planlaması sağlanır.
+            </p>
+          </div>
+          <aside class="page-hero-aside tickets-hero-aside">
+            <p class="hero-aside-label" data-i18n="ticketsQuickInfoLabel">Hızlı Bilgi</p>
+            <h3 data-i18n="ticketsHoursTitle">Çalışma Saatleri</h3>
+            <p data-i18n="ticketsHoursText">Her gün 10:00 - 19:00</p>
+            <div class="hero-aside-grid">
+              <div class="hero-aside-item">
+                <strong data-i18n="ticketsMetaProgramLabel">Program</strong>
+                <span data-i18n="ticketsMetaProgramValue">3 seçenek</span>
+              </div>
+              <div class="hero-aside-item">
+                <strong data-i18n="ticketsMetaPaymentLabel">Ödeme</strong>
+                <span data-i18n="ticketsMetaPaymentValue">Online yok</span>
+              </div>
+            </div>
+            <div class="hero-aside-note">
+              <h4 data-i18n="ticketsPolicyTitle">Ziyaret Notları</h4>
+              <p data-i18n="ticketsPolicyText">Gösteri saatinden en az 30 dakika önce parkta olmanızı öneririz.</p>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section class="section tickets-programs">
+        <div class="container grid grid-3">
+          <article class="card reveal tickets-program-card">
+            <h3 data-i18n="ticketsAdult">Değerlendirme Seansı</h3>
+            <p class="tickets-price">850 <span data-i18n="ticketsCurrency">TL</span></p>
+            <p data-i18n="ticketsNoteAdult">Uzman görüşmesi + planlama</p>
+          </article>
+          <article class="card reveal tickets-program-card">
+            <h3 data-i18n="ticketsChild">Destek Programı (Çocuk)</h3>
+            <p class="tickets-price">500 <span data-i18n="ticketsCurrency">TL</span></p>
+            <p data-i18n="ticketsNoteChild">Yaş ve sağlık durumuna göre planlanır</p>
+          </article>
+          <article class="card reveal tickets-program-card">
+            <h3 data-i18n="ticketsFamily">Aile Danışmanlığı Paketi</h3>
+            <p class="tickets-price">2400 <span data-i18n="ticketsCurrency">TL</span></p>
+            <p data-i18n="ticketsNoteFamily">Bilgilendirme + destek oturumları</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section tickets-table-section">
+        <div class="container table-wrap reveal">
+          <table>
+            <thead>
+              <tr>
+                <th data-i18n="ticketsTableHeadType">Program Tipi</th>
+                <th data-i18n="ticketsTableHeadPrice">Ücret</th>
+                <th data-i18n="ticketsTableHeadNote">Açıklama</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td data-i18n="ticketsAdult">Değerlendirme Seansı</td>
+                <td>850 <span data-i18n="ticketsCurrency">TL</span></td>
+                <td data-i18n="ticketsNoteAdult">Uzman görüşmesi + planlama</td>
+              </tr>
+              <tr>
+                <td data-i18n="ticketsChild">Destek Programı (Çocuk)</td>
+                <td>500 <span data-i18n="ticketsCurrency">TL</span></td>
+                <td data-i18n="ticketsNoteChild">Yaş ve sağlık durumuna göre planlanır</td>
+              </tr>
+              <tr>
+                <td data-i18n="ticketsFamily">Aile Danışmanlığı Paketi</td>
+                <td>2400 <span data-i18n="ticketsCurrency">TL</span></td>
+                <td data-i18n="ticketsNoteFamily">Bilgilendirme + destek oturumları</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="section tickets-disclaimer">
+        <div class="container">
+          <article class="card reveal tickets-disclaimer-card">
+            <h2 data-i18n="ticketsDisclaimerTitle">Önemli Bilgilendirme</h2>
+            <p data-i18n="ticketsDisclaimerText">
+              Programlar tıbbi tedavinin yerine geçmez. Uzman hekim ve terapist görüşü ile
+              destekleyici planlama yapılması önerilir.
+            </p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>© <span data-year></span> <span data-i18n="footerText">Dolphin Park. Tum haklari saklidir.</span></p>
+      </div>
+    </footer>
+
+    <script src="js/i18n.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
